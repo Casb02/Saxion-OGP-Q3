@@ -1,7 +1,7 @@
 Object Georienteerd Programmeren
 ---
 
-#### Special thanks to [Pim Meulenkamp ](https://github.com/Pimmeul) voor het maken van basis template. Deze is te downloaden op [saxion-kw3-oop-opdrachten-template](https://github.com/Pimmeul/saxion-kw3-oop-opdrachten-template).
+###### Special thanks to [Pim Meulenkamp ](https://github.com/Pimmeul) voor het maken van basis template. Deze is te downloaden op [saxion-kw3-oop-opdrachten-template](https://github.com/Pimmeul/saxion-kw3-oop-opdrachten-template).
 
 In Kwartiel 3 maken we 8 weken opdrachten voor OGP/OOP
 In deze repo staan mijn persoonlijke uitwerkingen.
