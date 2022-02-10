@@ -23,15 +23,37 @@ public class Person {
     }
 
     public void setZipCode(String zipCode) {
-        // TODO: Implement checks and make sure to throw an IllegalArgumentException if something goes wrong!
+        if (!vildateZip(zipCode)) throw new IllegalArgumentException("Invalid Zipcode.");
         this.zipCode = zipCode;
     }
 
     public void setPhonenumber(String phoneNumber) {
-        // TODO: Implement checks and make sure to throw an IllegalArgumentException if something goes wrong!
+        if (!validateTel(phoneNumber)) throw new IllegalArgumentException("Invalid Phone number.");
         this.phoneNumber = phoneNumber;
     }
 
+
+    //Helper methodes
+
+    private boolean vildateZip(String zipCode) {
+        if (zipCode.length() != 6) return false;
+        for (int i = 0; i < 4; i++) {
+            if (!Character.isDigit(zipCode.charAt(i))) return false;
+        }
+        for (int i = 4; i < 6; i++) {
+            if (!Character.isLetter(zipCode.charAt(i))) return false;
+        }
+        return true;
+    }
+
+    private boolean validateTel(String telNumber) {
+        if (telNumber.length() != 10) return false;
+        for (int i = 0; i < 10; i++) {
+            if (!Character.isDigit(telNumber.charAt(i))) return false;
+            if (!(telNumber.charAt(0) == '0')) return false;
+        }
+        return true;
+    }
     /**
      * This is the default generated toString from IntelliJ. It works for now!
      */
