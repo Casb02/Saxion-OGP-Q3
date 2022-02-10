@@ -3,6 +3,10 @@ Object Georienteerd Programmeren
 In Kwartiel 3 maken we 8 weken opdrachten voor OGP/OOP
 In deze repo staan mijn persoonlijke uitwerkingen.
 
+### Openen + uitvoeren:
+Documentatie over start scripen staat onder de module inhoud
+
+
 ## Module inhoud:
 
 **`⚠️ Saxion vond het een leuk idee om sommige weken de opgave nummering bij 0 te starten 😑`**
@@ -89,3 +93,11 @@ In deze repo staan mijn persoonlijke uitwerkingen.
 - [ ] **Week 8: Sample Exam** 
   - [ ] Exercise 1: Handing out fines (60 min)
   - [ ] Exercise 2: Fitness club "Merlin" (45 min)
+
+---
+
+# Uitleg Uitvoeren in IntelliJ
+1. Open een specefieke week, dit is erg belangrijk dat deze apart geopen wordt.
+   ![Preview](doc-img/open.png)
+2. Voer een week uit, klik niet op de start knoppen in de idea.
+   ![Preview](doc-img/ideascripts.png)
