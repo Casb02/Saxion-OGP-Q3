@@ -1,4 +1,4 @@
-Object Georienteerd Programmeren
+Object georiënteerd programmeren
 ---
 
 ###### Special thanks to [Pim Meulenkamp ](https://github.com/Pimmeul) voor het maken van basis template. Deze is te gebruiken als template op [saxion-kw3-oop-opdrachten-template](https://github.com/Pimmeul/saxion-kw3-oop-opdrachten-template).
