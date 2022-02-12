@@ -32,7 +32,7 @@ Documentatie over start scripen staat onder de module inhoud
 - [ ] **Week 2**
     - [x] Exercise 1: Rectangle
     - [x] Exercise 2: Validation
-    - [ ] Exercise 3: Bookcase
+    - [x] Exercise 3: Bookcase
     - [ ] Exercise 4: A plane with passengers
     - [ ] Exercise 5: Yathzee
 
