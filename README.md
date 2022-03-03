@@ -33,7 +33,7 @@ Documentatie over start scripen staat onder de module inhoud
     - [x] Exercise 1: Rectangle
     - [x] Exercise 2: Validation
     - [x] Exercise 3: Bookcase
-    - [ ] Exercise 4: A plane with passengers
+    - [X] Exercise 4: A plane with passengers
     - [ ] Exercise 5: Yathzee
 
 ## Week 3: Inheritance
