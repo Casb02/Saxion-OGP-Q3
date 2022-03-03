@@ -1,6 +1,9 @@
 package nl.saxion.oop.week3;
 
 import nl.saxion.app.SaxionApp;
+import nl.saxion.oop.week3.models.DimmableLamp;
+import nl.saxion.oop.week3.models.Lamp;
+import nl.saxion.oop.week3.models.PhilipsHUELamp;
 
 import java.awt.*;
 
@@ -10,46 +13,47 @@ public class Application implements Runnable {
     }
 
     public void run() {
-        // TODO: Create the diferent kind of lamps.. We have provided some code for you to experiment with!
+        // TODO: Create the different kind of lamps.. We have provided some code for you to experiment with!
+        SaxionApp.setBorderColor(Color.BLACK);
 
-//        // Create lamps
-//        Lamp lamp = new Lamp();
-//        DimmableLamp dimmable = new DimmableLamp(50);
-//        PhilipsHUELamp hueLamp = new PhilipsHUELamp(Color.GREEN);
-//
-//        // Turn all lamps on
-//        lamp.turnOn();
-//        dimmable.turnOn();
-//        hueLamp.turnOn();
-//
-//        // Print details for each lamp.
-//        SaxionApp.printLine("Lamp: " + lamp);
-//        SaxionApp.printLine("Dimmable lamp: " + dimmable);
-//        SaxionApp.printLine("Philips HUE lamp: " + hueLamp);
-//
-//        // Draw lamps
-//        lamp.draw(50, 100, 25);
-//        dimmable.draw(125, 100, 25);
-//        hueLamp.draw(200, 100, 25);
-//        SaxionApp.pause();
-//
-//        // Clear the application
-//        SaxionApp.clear();
-//
-//        // Now lets change the state for each lamp
-//        lamp.turnOff();
-//        dimmable.setBrightness(10);
-//        hueLamp.setColor(Color.BLUE);
-//        hueLamp.setBrightness(70);
-//
-//        // Print details for each lamp.
-//        SaxionApp.printLine("Lamp: " + lamp);
-//        SaxionApp.printLine("Dimmable lamp: " + dimmable);
-//        SaxionApp.printLine("Philips HUE lamp: " + hueLamp);
-//
-//        // Draw lamps
-//        lamp.draw(50, 100, 25);
-//        dimmable.draw(125, 100, 25);
-//        hueLamp.draw(200, 100, 25);
+        // Create lamps
+        Lamp lamp = new Lamp();
+        DimmableLamp dimmable = new DimmableLamp(50);
+        PhilipsHUELamp hueLamp = new PhilipsHUELamp(Color.GREEN);
+
+        // Turn all lamps on
+        lamp.turnOn();
+        dimmable.turnOn();
+        hueLamp.turnOn();
+
+        // Print details for each lamp.
+        SaxionApp.printLine("Lamp: " + lamp);
+        SaxionApp.printLine("Dimmable lamp: " + dimmable);
+        SaxionApp.printLine("Philips HUE lamp: " + hueLamp);
+
+        // Draw lamps
+        lamp.draw(50, 100, 25);
+        dimmable.draw(125, 100, 25);
+        hueLamp.draw(200, 100, 25);
+        SaxionApp.pause();
+
+        // Clear the application
+        SaxionApp.clear();
+
+        // Now lets change the state for each lamp
+        lamp.turnOff();
+        dimmable.setBrightness(10);
+        hueLamp.setColor(Color.BLUE);
+        hueLamp.setBrightness(70);
+
+        // Print details for each lamp.
+        SaxionApp.printLine("Lamp: " + lamp);
+        SaxionApp.printLine("Dimmable lamp: " + dimmable);
+        SaxionApp.printLine("Philips HUE lamp: " + hueLamp);
+
+        // Draw lamps
+        lamp.draw(50, 100, 25);
+        dimmable.draw(125, 100, 25);
+        hueLamp.draw(200, 100, 25);
     }
 }
