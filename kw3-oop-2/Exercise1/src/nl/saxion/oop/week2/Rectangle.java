@@ -6,11 +6,11 @@ import java.awt.*;
 
 public class Rectangle {
 
-    private int x = 0;
-    private int y = 0;
-    private int width = 100;
-    private int height = 100;
-    private Color color = Color.red;
+    private int x;
+    private int y;
+    private int width;
+    private int height;
+    private Color color;
 
     public Rectangle() {}
 
@@ -19,21 +19,15 @@ public class Rectangle {
     }
 
     public Rectangle(int x, int y) {
-        this.x = x;
-        this.y = y;
+        this(x, y, 100, 100);
     }
 
     public Rectangle(int x, int y, Color color) {
-        this.x = x;
-        this.y = y;
-        this.color = color;
+        this(x, y, 100, 100, Color.red);
     }
 
     public Rectangle(int x, int y, int width, int height) {
-        this.x = x;
-        this.y = y;
-        this.width = width;
-        this.height = height;
+        this(x, y, width, height, Color.red);
     }
 
     public Rectangle(int x, int y, int width, int height, Color color) {
