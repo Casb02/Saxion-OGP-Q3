@@ -39,8 +39,8 @@ Documentatie over start scripen staat onder de module inhoud
 ## Week 3: Inheritance
 
 - [ ] **Week 3**
-    - [ ] Exercise 0: Buildings
-    - [ ] Exercise 1: Home automation
+    - [X] Exercise 0: Buildings
+    - [X] Exercise 1: Home automation
     - [ ] Exercise 2: Bank accounts
     - [ ] Exercise 3: Multilingualism
     - [ ] Exercise 4: Mentoring students
