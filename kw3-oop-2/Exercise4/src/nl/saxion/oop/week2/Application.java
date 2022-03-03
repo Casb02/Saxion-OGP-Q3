@@ -12,6 +12,7 @@ public class Application implements Runnable {
     }
 
     public void run() {
+        Airplane airplane = new Airplane(10);
         int menuInput = -1;
         do {
             // We'll help you out by generating a random passenger to load.. Have a look at the method definition in the Passenger class!
@@ -42,17 +43,29 @@ public class Application implements Runnable {
 
                 SaxionApp.printLine();
 
-                // TODO: Create your own implementation of how to get the passenger on board of your airplane!
+                airplane.loadPassenger(nextPassenger);
 
                 SaxionApp.pause();
             } else if (menuInput == 2) {
 
-                // TODO: Implement the locking / unlocking of doors.
+                if (airplane.isLocked()) {
+                    airplane.unlockDoor();
+                    SaxionApp.printLine("Doors unlocked!");
+                } else {
+                    airplane.lockDoor();
+                    SaxionApp.printLine("Doors locked!");
+
+                }
 
                 SaxionApp.pause();
             } else if (menuInput == 9) {
 
-                // TODO: Implement departure. You can just print out a sentence if departure is successful.
+                if (airplane.depart()) {
+                    SaxionApp.printLine("The plane has departed!");
+                } else {
+                    SaxionApp.printLine("The plane is not ready to depart!" + airplane.depart());
+                }
+                SaxionApp.pause();
             }
 
         } while (menuInput != 0);

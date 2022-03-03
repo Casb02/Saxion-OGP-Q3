@@ -1,4 +1,4 @@
-import nl.saxion.oop.week2.model.Airplane;
+import nl.saxion.oop.week2.Airplane;
 import nl.saxion.oop.week2.model.Bag;
 import nl.saxion.oop.week2.model.Passenger;
 import org.junit.jupiter.api.BeforeEach;
@@ -23,31 +23,31 @@ class AirplaneTest {
 
     @Test
     public void testLockDoors() {
-        plane.lockDoors();
+        plane.lockDoor();
 
-        assertTrue(plane.hasLockedDoors());
+        assertTrue(plane.isLocked());
     }
 
     @Test
     public void testUnlockUnlockedDoors() {
 //        plane.lockDoors(); // we'll forget to lock the doors.. Should not matter
-        plane.unlockDoors();
+        plane.unlockDoor();
 
-        assertFalse(plane.hasLockedDoors());
+        assertFalse(plane.isLocked());
     }
 
     @Test
     public void testUnlockDoors() {
-        plane.lockDoors();
+        plane.lockDoor();
 
-        plane.unlockDoors();
+        plane.unlockDoor();
 
-        assertFalse(plane.hasLockedDoors());
+        assertFalse(plane.isLocked());
     }
 
     @Test
     public void testBoardPassenger() {
-        plane.boardPassenger(bob);
+        plane.loadPassenger(bob);
     }
 
     @Test
@@ -55,24 +55,24 @@ class AirplaneTest {
         Bag b = new Bag(10);
         bob.addLuggage(b);
 
-        plane.boardPassenger(bob);
+        plane.loadPassenger(bob);
     }
 
     @Test
     public void testBoardPassengersWithLockedDoors() {
-        plane.lockDoors();
+        plane.lockDoor();
 
         assertThrows(IllegalStateException.class, () -> { // We expect code inside these { } to throw an instance of the IllegalStateException class.
-            plane.boardPassenger(bob); // We expect this to throw an Exception since the doors are closed!
+            plane.loadPassenger(bob); // We expect this to throw an Exception since the doors are closed!
         });
     }
 
     @Test
     public void testBoardPlaneWithoutCapacity() {
-        plane.boardPassenger(jane);
+        plane.loadPassenger(jane);
 
         assertThrows(IllegalArgumentException.class, () -> {
-            plane.boardPassenger(bob); // This should throw an IAE because there are no seats for Bob.
+            plane.loadPassenger(bob); // This should throw an IAE because there are no seats for Bob.
         });
     }
 
@@ -82,7 +82,7 @@ class AirplaneTest {
         bob.addLuggage(b);
 
         assertThrows(IllegalArgumentException.class, () -> {
-            plane.boardPassenger(bob); // This should throw an IAE because Bob's luggage is too heavy.
+            plane.loadPassenger(bob); // This should throw an IAE because Bob's luggage is too heavy.
         });
     }
 }
