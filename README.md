@@ -41,7 +41,7 @@ Documentatie over start scripen staat onder de module inhoud
 - [ ] **Week 3**
     - [X] Exercise 0: Buildings
     - [X] Exercise 1: Home automation
-    - [ ] Exercise 2: Bank accounts
+    - [X] Exercise 2: Bank accounts
     - [ ] Exercise 3: Multilingualism
     - [ ] Exercise 4: Mentoring students
     - [ ] Exercise 5: Drawing shapes
@@ -51,7 +51,7 @@ Documentatie over start scripen staat onder de module inhoud
 
 - [ ] **Week 4**
   - [ ] Exercise 0: Hospitality
-  - [ ] Exercise 1: Introducing the Shape superclass
+  - [X] Exercise 1: Introducing the Shape superclass
   - [ ] Exercise 2: Calendar
     - [ ] Bonus: Draw a calendar
   - [ ] Exercise 3: Candy dispenser
